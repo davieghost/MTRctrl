@@ -20,10 +20,13 @@ class Motor < Dino::Components::BaseComponent
 
 end
 
-led = Motor.new(pin: 9, board: board)
+motor1 = Motor.new(pin: 9, board: board)
+motor2 = Motor.new(pin: 10, board: board)
+
 
 begin
   print "enter speed: "
   speed = gets.chomp.to_i
-  led.a_w(speed)
+  motor1.a_w(speed)
+  motor2.a_w(speed)
 end until speed == -1
