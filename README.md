@@ -1,2 +1,1 @@
-first_motor_control
-===================
+### Ruby Motor Controller
